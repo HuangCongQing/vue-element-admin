@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+        <h3 class="title">博灵(Blink)科技</h3>
       </div>
 
       <el-form-item prop="username">
@@ -97,8 +97,8 @@ export default {
     }
     return {
       loginForm: {
-        username: 'admin',
-        password: '111111'
+        username: 'admin', // 账号
+        password: '111111'// 密码
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
